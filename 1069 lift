@@ -1,0 +1,18 @@
+#include<iostream>
+using namespace std;
+int main()
+{
+    int test_case,me,lift;
+    cin>>test_case;
+    for(int i=1;i<=test_case;i++)
+    {
+        cin>>me>>lift;
+        if(me<=lift)
+        {
+            cout<<"Case "<<i<<": "<<((lift*4)+19)<<endl;
+        }
+        else
+            cout<<"Case "<<i<<": "<<((((me-lift)+me)*4)+19)<<endl;
+    }
+    return 0;
+}
